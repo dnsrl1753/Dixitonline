@@ -10,4 +10,5 @@ public class A_main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
     }
+    //Ahreum 연동 완료
 }
