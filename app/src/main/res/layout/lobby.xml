@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="내정보"
+		android:id="@+id/B_myInfo"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="카드샵"
+		android:layout_toRightOf="@id/B_myInfo"
+		android:id="@+id/B_shop"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="로그아웃"
+		android:layout_toRightOf="@id/B_shop"
+		android:id="@+id/B_logout"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="room0 5/6"
+		android:layout_below="@id/B_myInfo"
+		android:onClick="B_room"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="옵션"
+		android:layout_toRightOf="@id/B_logout"/>
+
+</RelativeLayout>
+
