@@ -8,37 +8,41 @@
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
-		android:text="내정보"
-		android:id="@+id/B_myInfo"/>
-
-	<Button
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="카드샵"
-		android:layout_toRightOf="@id/B_myInfo"
-		android:id="@+id/B_shop"/>
-
-	<Button
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="PLAY"
-		android:layout_below="@id/B_myInfo"
-		android:onClick="B_room"
-		android:id="@+id/lobbyButton1"/>
-
-	<Button
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
 		android:text="옵션"
-		android:layout_toRightOf="@id/B_shop"
-		android:onClick="B_option"/>
+		android:onClick="B_option"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:id="@+id/B_option" />
 
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
+		android:text="내정보"
+		android:id="@+id/B_myinfo"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:onClick="B_myinfo" />
+
+	<Button
+		android:layout_width="150dp"
 		android:text="초대하기"
-		android:layout_toRightOf="@id/lobbyButton1"
-		android:layout_alignBottom="@id/lobbyButton1"/>
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/B_invitation"
+		android:onClick="B_invitaion"
+		android:layout_height="wrap_content" />
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="PLAY"
+		android:onClick="B_room"
+		android:id="@+id/B_play"
+		android:layout_above="@+id/B_invitation"
+		android:layout_alignLeft="@+id/B_invitation"
+		android:layout_alignStart="@+id/B_invitation"
+		android:layout_width="150dp" />
 
 </RelativeLayout>
 
