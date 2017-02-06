@@ -21,22 +21,24 @@
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
-		android:text="로그아웃"
-		android:layout_toRightOf="@id/B_shop"
-		android:id="@+id/B_logout"/>
-
-	<Button
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="room0 5/6"
+		android:text="PLAY"
 		android:layout_below="@id/B_myInfo"
-		android:onClick="B_room"/>
+		android:onClick="B_room"
+		android:id="@+id/lobbyButton1"/>
 
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
 		android:text="옵션"
-		android:layout_toRightOf="@id/B_logout"/>
+		android:layout_toRightOf="@id/B_shop"
+		android:onClick="B_option"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="초대하기"
+		android:layout_toRightOf="@id/lobbyButton1"
+		android:layout_alignBottom="@id/lobbyButton1"/>
 
 </RelativeLayout>
 

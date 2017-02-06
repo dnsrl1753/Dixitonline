@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
@@ -7,8 +7,39 @@
 
 	<TextView
 		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Text"/>
+		android:layout_width="match_parent"
+		android:text="[비/공개 mode 점수] 방번호 방제목"
+		android:id="@+id/roomTextView1"/>
 
-</LinearLayout>
+	<ImageView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@android:drawable/ic_delete"
+		android:layout_below="@id/roomTextView1"
+		android:id="@+id/roomImageView1"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="이거슨 채팅차아아아아앙"
+		android:layout_toRightOf="@id/roomImageView1"
+		android:layout_below="@id/roomTextView1"
+		android:id="@+id/roomTextView2"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="START"
+		android:layout_below="@id/roomTextView2"
+		android:id="@+id/roomButton1"
+		android:onClick="B_start"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="방설정"
+		android:layout_below="@id/roomButton1"
+		android:onClick="B_roomsetting"/>
+
+</RelativeLayout>
 

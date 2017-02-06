@@ -17,8 +17,14 @@ public class A_lobby extends Activity
 	}
 	public void B_room(View v)
 	{
-		Toast.makeText(getApplicationContext(),"room",300).show();
+		Toast.makeText(getApplicationContext(),"room",200).show();
 		Intent intent = new Intent(A_lobby.this, A_room.class);
+		startActivity(intent);
+	}
+	public void B_option(View v)
+	{
+		Toast.makeText(getApplicationContext(),"option",200).show();
+		Intent intent = new Intent(A_lobby.this,A_option.class);
 		startActivity(intent);
 	}
 
