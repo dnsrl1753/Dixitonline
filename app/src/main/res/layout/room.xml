@@ -1,45 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/roomButton1"
+		android:layout_below="@+id/roomTextView1"
+		android:id="@+id/roomLinearLayout">
+
+		<ImageView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:id="@+id/roomImageView1"
+			android:layout_weight="1" />
+
+		<TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="이거슨 채팅차아아아아앙"
+            android:id="@+id/roomTextView2"
+			android:layout_weight="1" />
+	</LinearLayout>
 
 	<TextView
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:text="[비/공개 mode 점수] 방번호 방제목"
-		android:id="@+id/roomTextView1"/>
-
-	<ImageView
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:src="@android:drawable/ic_delete"
-		android:layout_below="@id/roomTextView1"
-		android:id="@+id/roomImageView1"/>
-
-	<TextView
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="이거슨 채팅차아아아아앙"
-		android:layout_toRightOf="@id/roomImageView1"
-		android:layout_below="@id/roomTextView1"
-		android:id="@+id/roomTextView2"/>
+		android:id="@+id/roomTextView1"
+		android:layout_toLeftOf="@+id/B_roomsetting"
+		android:layout_toStartOf="@+id/B_roomsetting"
+		android:layout_alignBottom="@+id/B_roomsetting"
+		android:layout_alignParentTop="true" />
 
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
 		android:text="START"
-		android:layout_below="@id/roomTextView2"
 		android:id="@+id/roomButton1"
-		android:onClick="B_start"/>
+		android:onClick="B_start"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true" />
 
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
 		android:text="방설정"
-		android:layout_below="@id/roomButton1"
-		android:onClick="B_roomsetting"/>
+		android:onClick="B_roomsetting"
+		android:id="@+id/B_roomsetting"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true" />
+
+	<com.google.android.gms.ads.AdView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:id="@+id/roomAdView"
+		android:layout_toLeftOf="@+id/roomButton1"
+		android:layout_toStartOf="@+id/roomButton1"
+		android:layout_below="@id/roomLinearLayout" />
 
 </RelativeLayout>
 
