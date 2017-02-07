@@ -7,6 +7,14 @@
 	android:orientation="vertical"
 	android:gravity="center">
 
+	<Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="카카오톡 계정으로 로그인"
+        android:onClick="B_login"
+        android:id="@+id/B_login"
+        android:layout_centerVertical="true" />
+	
     <ImageView
         app:srcCompat="@mipmap/ic_launcher"
         android:id="@+id/imageView2"
@@ -18,13 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="카카오톡 계정으로 로그인"
-        android:onClick="B_login"
-        android:id="@+id/B_login"
-        android:layout_centerVertical="true" />
+ 
 
 
 </RelativeLayout>
